@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header-page hidden">
+    <header class="header-page">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo header-logo" href="/index.html"
@@ -139,7 +139,7 @@
     <main>
       <!-- Section 1 -->
 
-      <section class="main-page hidden">
+      <section class="main-page">
         <div class="container first-container">
           <h1 class="main-text">Effective Solutions for Your Business</h1>
           <button class="main-page-button" type="button" data-modal-open>
@@ -150,7 +150,7 @@
 
       <!-- Section 2 -->
 
-      <section class="title hidden">
+      <section class="title">
         <div class="container title-container">
           <h2 class="visually-hidden">i</h2>
           <ul class="title-list">
@@ -208,12 +208,13 @@
 
       <!-- Section 3 -->
 
-      <section class="page-team hidden">
+      <section class="page-team">
         <div class="container container-page">
           <h2 class="title-text">Our Team</h2>
           <ul class="page-list">
             <li class="team-list">
               <img
+                srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x"
                 src="./images/img-1.jpg"
                 alt="Mark Guerrero Product Designer"
                 width="264"
@@ -263,6 +264,7 @@
             </li>
             <li class="team-list">
               <img
+                srcset="./images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x"
                 src="./images/img-2.jpg"
                 alt="Tom Ford Frontend Developer"
                 width="264"
@@ -312,6 +314,7 @@
             </li>
             <li class="team-list">
               <img
+                srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="Camila Garcia Marketing"
                 width="264"
@@ -361,6 +364,7 @@
             </li>
             <li class="team-list">
               <img
+                srcset="./images/img-4.jpg 1x, ./images/img-4@2x.jpg 2x"
                 src="./images/img-4.jpg"
                 alt="Daniel Wilson UI Designer"
                 width="264"
@@ -414,13 +418,17 @@
 
       <!-- Section 4 -->
 
-      <section class="portfolio hidden">
+      <section class="portfolio">
         <div class="container container-portfolio">
           <h2 class="title-text">Our Portfolio</h2>
           <ul class="list-portfolio">
             <li class="portfolio-img">
               <div class="picture">
                 <img
+                  srcset="
+                    ./images/picture-1.jpg    1x,
+                    ./images/picture-1@2x.jpg 2x
+                  "
                   src="./images/picture-1.jpg"
                   alt="Banking App"
                   width="360"
@@ -440,6 +448,10 @@
             <li class="portfolio-img">
               <div class="picture">
                 <img
+                  srcset="
+                    ./images/picture-2.jpg    1x,
+                    ./images/picture-2@2x.jpg 2x
+                  "
                   src="./images/picture-2.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -459,6 +471,10 @@
             <li class="portfolio-img">
               <div class="picture">
                 <img
+                  srcset="
+                    ./images/picture-3.jpg    1x,
+                    ./images/picture-3@2x.jpg 2x
+                  "
                   src="./images/picture-3.jpg"
                   alt="Meditation App"
                   width="360"
@@ -478,6 +494,10 @@
             <li class="portfolio-img">
               <div class="picture">
                 <img
+                  srcset="
+                    ./images/picture-4.jpg    1x,
+                    ./images/picture-4@2x.jpg 2x
+                  "
                   src="./images/picture-4.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -497,6 +517,10 @@
             <li class="portfolio-img">
               <div class="picture">
                 <img
+                  srcset="
+                    ./images/picture-5.jpg    1x,
+                    ./images/picture-5@2x.jpg 2x
+                  "
                   src="./images/picture-5.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -516,6 +540,10 @@
             <li class="portfolio-img">
               <div class="picture">
                 <img
+                  srcset="
+                    ./images/picture-6.jpg    1x,
+                    ./images/picture-6@2x.jpg 2x
+                  "
                   src="./images/picture-6.jpg"
                   alt="Online Courses"
                   width="360"
@@ -608,7 +636,7 @@
 
     <!-- modal -->
 
-    <div class="backdrop hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="btn-close" type="button" data-modal-close>
           <svg width="8" height="8" class="close-icon">
@@ -681,8 +709,10 @@
                 ><svg width="10" height="8" class="custom-checkbox-icon">
                   <use href="./images/icons.svg#icon-Vector"></use></svg
               ></span>
-              I accept the terms and conditions of the
-              <a href="" class="policy">Privacy Policy</a></label
+              <span>
+                I accept the terms and conditions of the
+                <a href="" class="policy">Privacy Policy</a></span
+              ></label
             >
           </div>
           <button class="main-page-button" type="button" data-modal-open>
