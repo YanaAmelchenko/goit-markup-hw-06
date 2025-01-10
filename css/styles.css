@@ -570,7 +570,7 @@ button {
   padding: 32px 0;
 }
 
-.inf-page {
+.inf-page-center {
   text-align: center;
   margin-bottom: 8px;
   font-weight: 500;
@@ -580,7 +580,7 @@ button {
   color: #2e2f42;
 }
 
-.text-inside {
+.text-inside-center {
   text-align: center;
 }
 
@@ -679,9 +679,12 @@ button {
   border-top: none;
 }
 
-.inf-page,
-.text-inside {
-  text-align: left;
+.inf-pages {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .overlay-text {
